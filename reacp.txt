@@ -1,0 +1,18 @@
+-Logo
+-Nav bar simple sans background 
+-carouselle d'image de +/- 400px de longeur 
+-un div de 200px de longeur avec un texte a cotei et une image a droite 
+-div ui prend le reste de la page avec un background gris clair et des imag artistique et un petit texte 
+avec un style bien definis (des escaliers).
+
+
+-header 
+    -logo
+    -navbar
+-div
+    -background image(carouselle)
+    -div
+	-div(texte, button voir plus et des modals)
+	-div(image)
+    -div
+	-card(personnnaliser)

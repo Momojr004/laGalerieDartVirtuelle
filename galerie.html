@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La galerie d'art virtuelle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <style>
+        ul {
+            margin-left: 400px;
+        }
+
+        ul li a {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .nav-underline .nav-item .active {
+            border-bottom-color: #CCA44C;
+        }
+
+        .custom-card {
+            border: none;
+            /* Enlever les bordures */
+            width: 300px;
+            /* Définir la largeur à environ 300 pixels */
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <header>
+        <div>
+            <img src="./img/logo.png" alt="logo" style="height: 100px; width: 200px; margin-left: 550px;">
+        </div>
+
+        <div>
+            <!-- navbar boostrap -->
+
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Link</a>
+                </li> -->
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle disabled" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">About</a>
+                    <!-- <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul> -->
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle disabled" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Services</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle disabled" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Pages</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle disabled" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Bloc</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Contacts</a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+
+
+    <div>
+        <div style="margin-top: 40px;">
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" ">
+                <div class=" carousel-inner"
+                style=" width: 70%; height: auto; margin-left: 200px; border-radius: 10px;">
+                <div class=" carousel-item active">
+                    <img src="./img/imgCarousel1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/imgCarousel2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/imgCarousel3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button style="margin-left: 150px;" class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button style="margin-right: 140px;" class="carousel-control-next" type="button"
+                data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div style="display: flex; margin-top: 40px; height: 200px; width: 200px; ;">
+        <div style="height: 350px; width: 500px; text-align: center; margin-left: 300px; margin-top: 2px;">
+            <div class="card custom-card" style="width: 300px; border: none;">
+                <div class="card-body">
+                    <h4 class="card-title">A Few Words About Me</h4>
+                    <br>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, commodi! Itaque,
+                        sed fugiat dolores animi eaque deserunt fugit eos temporibus odio! Consequatur.
+                    </p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                        style="border: #CCA44C solid 2px; border-radius: 100px; font-size: 18px">
+                        &nbsp; &nbsp; &nbsp; <b>Read more </b> &nbsp;&nbsp; &nbsp;
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quaerat minima ab
+                                    accusamus velit nesciunt et eius cumque. Temporibus voluptate quisquam consequuntur
+                                    deleniti non adipisci repudiandae dolorum? Necessitatibus, tenetur sed?
+                                    Maxime magni dignissimos laudantium eaque sequi fuga unde eveniet tenetur soluta?
+                                    Cum possimus nisi voluptas autem aliquid nobis repellendus, rerum veritatis sunt
+                                    laboriosam veniam aperiam odio eveniet dolorem non iusto.
+                                    Magnam voluptates porro libero repudiandae laboriosam provident corrupti, totam
+                                    perspiciatis! Iste, animi. Enim odit eius deserunt, distinctio laborum optio nihil
+                                    provident amet atque doloribus. Officia ut accusamus velit voluptatibus vel!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn"
+                                        style="border: #CCA44C solid 2px; border-radius: 30px; "
+                                        data-bs-dismiss="modal">&nbsp; &nbsp; Close &nbsp; &nbsp;</button>
+                                    <button type="button" class="btn "
+                                        style="border: #CCA44C solid 2px; border-radius: 30px;"> &nbsp; Understood
+                                        &nbsp;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div style="margin-left: 75px;"><img src="./img/image0.jpg"
+                style="height: 250px; width: 250px; margin-top: 20px;"></div>
+    </div>
+
+
+
+    <div style="height: 500px; width: 100%; background-color: #e9ecef; margin-top: 150px;">
+
+        <div style="display: flex; margin-left: 250px;">
+
+            <div style="margin-top: 30px; margin-left: 20px; margin-right: 20px">
+                <div class="card" style="height: 450px; width: 220px;">
+                    <img src="./img/image3.jpg" class="card-img-top" alt="..."
+                        style="height: 300px; width: 200px; margin-left: 10px; margin-top: 5px;">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px; margin-left: 20px; margin-right: 20px">
+                <div class="card" style="height: 400px; width: 220px;">
+                    <img src="./img/image4.jpg" class="card-img-top" alt="..."
+                        style="height: 250px; width: 200px; margin-left: 10px; margin-top: 5px;">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px; margin-left: 20px; margin-right: 20px;">
+                <div class="card" style="height: 350px; width: 220px;">
+                    <img src="./img/image5.jpg" class="card-img-top" alt="..."
+                        style="height: 200px; width: 200px; margin-left: 10px; margin-top: 5px;">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
